@@ -266,7 +266,7 @@ nav li a:active
     height: 80px;
     background-color: rgba(6, 6, 19, 0.781);
     color: #fff;
-    font-size:  18px;
+    font-size: 18px; /*test changed for texting git diff command*/
     text-align: center;
     padding-top:5px;
     transition: background-color 1s, color 1s;
