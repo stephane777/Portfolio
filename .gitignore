@@ -1,0 +1,6 @@
+*.a
+.DS_Store
+.git_ignore
+stephane.jpg
+.vscode
+portfolio_welcome.jpg
