@@ -164,7 +164,7 @@ nav li a:active
 .main-icon li a:hover,
 .main-icon li a:link {
     text-decoration: none;
-    color: #BFB755;
+    /* color: #BFB755; */
 }
 .main-icon li a:hover i,
 .main-icon li a:link i,
