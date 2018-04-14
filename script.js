@@ -41,20 +41,31 @@ $(document).ready(function(){
       }
     }
   });
-
+  
+  var map;
+  $(document).ready(function(){
+    map = new GMaps({
+      el: '#map',
+      lat: -12.043333,
+      lng: -77.028333,
+      zoomControl : true,
+      zoomControlOpt: {
+          style : 'SMALL',
+          position: 'TOP_LEFT'
+      },
+      panControl : false,
+      streetViewControl : false,
+      mapTypeControl: false,
+      overviewMapControl: false
+    });
+  });
 //   var map = new GMaps({
 //     div: '.map',
 //     lat: 51.5098942, /* 51.5098942,-0.1486348 */
 //     lng: -0.1486348
 // });
 
-var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
+
 
 // map.addMarker({
 // lat: 51.5098942,
