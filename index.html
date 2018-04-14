@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
     <link rel="stylesheet" type="text/css" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- <link rel="stylesheet" href="https://github.com/hpneo/gmaps/gmaps.js"> -->
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js"></script> -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyVOR-QMaIo2JDtYoXxmgXiLf40XeG9BE" async defer></script>
     <script src="gmaps.js"></script>
+    <script src="script.js"></script>
+    <!--
+        AIzaSyAyVOR-QMaIo2JDtYoXxmgXiLf40XeG9BE
+    -->
 </head>
+
 <body>
     <header id="home">
         <nav>
@@ -211,7 +216,8 @@
             <div class="col span-4-of-6"></div>
         </div>
         <div class="map-box">
-            <div class="map"></div>
+            <!-- <div class="map"></div> -->
+            <div id="map"></div>
             <div class="form-box">
 
                 <form method="post" action="#" class="contact-form">
@@ -315,7 +321,6 @@
             </p>
         </div>
     </footer>
-    <script src="script.js"></script>
 </body>
 
 </html>
