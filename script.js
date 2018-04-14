@@ -48,13 +48,13 @@ $(document).ready(function(){
     lng: -0.1486348
 });
 
-map.addMarker({
-lat: 51.5098942,
-lng: -0.148990,
-title: 'London',
-infoWindow: {
-content: '<p>Our London headquarters</p>'
-}
-});
+// map.addMarker({
+// lat: 51.5098942,
+// lng: -0.148990,
+// title: 'London',
+// infoWindow: {
+// content: '<p>Our London headquarters</p>'
+// }
+// });
 
         })
