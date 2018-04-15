@@ -57,6 +57,7 @@ h1 {
 }
 .row:after { clear:both; }
 
+
 /*  GRID COLUMN / ROW SETUP   ==================================================================== */
 .col {
 	display: block;
