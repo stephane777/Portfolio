@@ -1,13 +1,35 @@
 $(document).ready(function(){
-            $('.menu').click(function(){
-                $('ul').toggleClass('active');
-            })
+  /* STICKY NAVIGATION AND WAYPOINT*/
+    $('.js--about').waypoint(function(direction){
+      if (direction == "down" ){
+        $('nav').addClass('sticky');
+      } else {
+        $('nav').removeClass('sticky');
+      }
+    }, { 
+        offset: '70px;'
+    })
+    $('.menu').click(function(){
+        $('ul').toggleClass('active');
+     })
 
-            /* SMOOTH SCROLLING*/
+/* SMOOTH SCROLLING*/
 
             $('a[href*="#"]')
   // Remove links that don't actually link to anything
   
+
+/*
+var waypoint = new Waypoint({
+  element: document.getElementById('px-offset-waypoint'),
+  handler: function(direction) {
+    notify('I am 20px from the top of the window')
+  },
+  offset: 20 
+})
+
+*/
+
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
@@ -41,13 +63,14 @@ $(document).ready(function(){
       }
     }
   });
-  
+
   var map;
   $(document).ready(function(){
     map = new GMaps({
       el: '#map',
-      lat: -12.043333,
-      lng: -77.028333,
+      lat: 51.5098942,
+      // lng: 1.1486348,
+      lng : -0.05,
       zoomControl : true,
       zoomControlOpt: {
           style : 'SMALL',
@@ -58,6 +81,7 @@ $(document).ready(function(){
       mapTypeControl: false,
       overviewMapControl: false
     });
+     map.setZoom(13);
   });
 //   var map = new GMaps({
 //     div: '.map',
@@ -75,5 +99,14 @@ $(document).ready(function(){
 // content: '<p>Our London headquarters</p>'
 // }
 // });
+
+
+var marker = new google.maps.Marker({
+  lat: 51.5098942,
+  lng: -0.148990,
+  map: map,
+  title: 'Hello World!'
+});
+
 
         })
