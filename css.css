@@ -97,6 +97,9 @@ h1 {
     font-size: 30px;
     display: none;
 }
+.name {
+    visibility: hidden;
+}
 /* STICKY NAVIGATION*/
 .sticky {
     position: fixed;
@@ -122,6 +125,10 @@ h1 {
     border-bottom: 2px solid #6D7C9D;
     transition: border-bottom 0.3s;
 }
+
+.sticky .name {
+    visibility: visible;
+}
 /* END STICKY NAVIGATION*/
 nav {
   width: 100%;
@@ -131,15 +138,23 @@ nav {
 }
 nav ul li {
   display: inline-block;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.15em;
   list-style: none;
 }
 
-
 nav ul { text-align: right;
-    padding: 15px 0px;
+         padding: 15px 0px;
     /* background-color: #6D7C9D; */
+}
+nav .name span {
+    display: block; /*SPAN do not accept vertical padding with default display:inline;*/
+    padding : 19px 0 15px 0;
+    font-size: 15px;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(109, 109, 109);
 }
 nav ul li a {
   padding: 0 20px 18px 20px;
@@ -160,6 +175,12 @@ nav li a:active
 {
     border-bottom: 2px solid #fff;
     transition: border-bottom 0.3s;
+}
+.nav-content {
+    float: left;
+}
+.nav-content ul::after {
+    clear: both;
 }
 .social-link {
     position: absolute;
@@ -189,9 +210,9 @@ nav li a:active
     color: #fff;
     padding: 10px;
     text-align: center;
-    margin-bottom:20px;
+    margin:0 0 20px 0;
     letter-spacing: 13px;
-    width: 95%;
+    width: 100%;
     font-size: 170%;
     border-radius: 10px;
 }
@@ -221,7 +242,7 @@ nav li a:active
 
 .about {
     background-color: #fff;
-    height: 80vh;
+    height: 400px;
     margin: 10vh 0;
     font-size: 18px;
 }
