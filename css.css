@@ -43,7 +43,15 @@ h1 {
     font-weight: 600;
     font-size: 40px;
 }
-
+h1::after {
+    display: block;
+    height: 2px;
+    background-color: #6D7C9D;
+    content: " "; /*always add a content for an after tag*/
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 /*  GROUPING  ============================================================================= */
 
 .row {
@@ -215,6 +223,8 @@ nav li a:active
     width: 100%;
     font-size: 170%;
     border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 .main-icon li a:hover,
 .main-icon li a:link {
@@ -242,9 +252,10 @@ nav li a:active
 
 .about {
     background-color: #fff;
-    height: 400px;
+    height: 600px;
     margin: 10vh 0;
     font-size: 18px;
+    
 }
 .portrait { 
             margin-top: 30%;
@@ -254,17 +265,11 @@ nav li a:active
 .center {
     text-align: center;
 }
-.about-me-1 {
+.about-me-p {
     padding: 3% 0;
+    letter-spacing: 0.05em;
+    line-height: 1.6em
   /*  font-family: 'Advent pro', sans-serif;*/
-}
-.about-me-2 {
-    padding: 3% 0;
-    /* font-family: 'Advent pro', sans-serif; */
-}
-.about-me-3 {
-    padding: 3% 0;
-    /* font-family: 'Advent pro', sans-serif; */
 }
 /*  PORTFOLIO */
 
@@ -276,6 +281,7 @@ nav li a:active
 .portfolio-img {
     list-style: none;
     width: 100%;
+    margin-top: 4%;
 }
 .portfolio-img li {
     display: block;
@@ -340,7 +346,7 @@ nav li a:active
 /* CONTACT */
 .contact {
     padding: 20px 0;
-    height: 690px;
+    height: 800px;
     background-color: #fff;
     
 }
@@ -353,12 +359,13 @@ nav li a:active
 }
 .map-box{
     width: 100%;
-    height: 600px;
+    height: 650px;
     position: relative;
+    margin-top: 4%;
 }
 #map {
     /* width: 100%; */
-    height: 600px;
+    height: 650px;
     /* display: block; */
     /* width: 95%; */
     /* height: 350px; */
@@ -376,7 +383,7 @@ nav li a:active
     background-color: rgba(255, 255, 255, 0.800);
     z-index: 10;
     width: 50%;
-    height: 600px;
+    height: 650px;
 }
 /* CONTACT FORM */
 label {
