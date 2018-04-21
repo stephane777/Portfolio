@@ -1,17 +1,17 @@
 $(document).ready(function(){
   /* STICKY NAVIGATION AND WAYPOINT*/
-    $('.js--about').waypoint(function(direction){
-      if (direction == "down" ){
-        $('nav').addClass('sticky');
-      } else {
-        $('nav').removeClass('sticky');
-      }
-    }, { 
-        offset: '70px;'
-    })
-    $('.menu').click(function(){
-        $('ul').toggleClass('active');
-     })
+  $('.js--about').waypoint(function(direction){
+    if (direction == "down" ){
+      $('nav').addClass('sticky');
+    } else {
+      $('nav').removeClass('sticky');
+    }
+  }, { 
+      offset: '70px;'
+  })
+            $('.bar').click(function(){
+                $('nav .menu ul').toggleClass('active');
+            })
 
 /* SMOOTH SCROLLING*/
 
