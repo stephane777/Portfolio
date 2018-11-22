@@ -389,13 +389,13 @@ nav li a:active
 }
 .map-box{
     width: 100%;
-    height: 650px;
+    height: 600px;
     position: relative;
-    margin-top: 4%;
+    margin-top: 6%;
 }
 #map {
     /* width: 100%; */
-    height: 650px;
+    height: 600px;
     /* display: block; */
     /* width: 95%; */
     /* height: 350px; */
@@ -413,7 +413,7 @@ nav li a:active
     background-color: rgba(255, 255, 255, 0.800);
     z-index: 10;
     width: 50%;
-    height: 650px;
+    height: 600px;
 }
 /* CONTACT FORM */
 label {
@@ -501,7 +501,7 @@ footer div div:nth-of-type(2) ul:after {
 }
 footer div div:nth-of-type(2) ul li {
     display: inline-block;
-    padding: 10px 20px 0 20px;
+    padding: 0px 20px 10px 20px;
 }
 footer div div:nth-of-type(2) ul li a {
     text-decoration: none;
@@ -576,6 +576,11 @@ footer div div:nth-of-type(2) ul li:nth-of-type(4) a:hover {
         margin: 0 auto;
         text-align: center;
     }
+    .skills {
+        font-size: 24px;
+        left: 25%;
+        top: 60%;
+    }
     .job_title {
         left: 0;
         right: 0;
@@ -640,7 +645,7 @@ footer div div:nth-of-type(2) ul li:nth-of-type(4) a:hover {
     }
     /* FOOTER*/
     footer {
-        height: 100px;
+        height: 130px;
     }
     footer div:nth-of-type(1) div {
         width: 50%;
